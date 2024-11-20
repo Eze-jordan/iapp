@@ -11,18 +11,18 @@ class WelcomePage extends StatelessWidget {
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.only(top: 20),
+          padding: const EdgeInsets.only(top: 10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               _buildHeader(),
-              const SizedBox(height: 15),
+              const SizedBox(height: 10),
               _buildSearchBar(),
               const SizedBox(height: 10),
-              _buildCategoryRow(context), // Passé le contexte ici
-              const SizedBox(height: 20),
+              _buildCategoryRow(context),
+              const SizedBox(height: 10),
               _buildPromoBanner(),
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
               _buildBadgesSection(),
               const SizedBox(height: 15),
               _buildProductRow(),
@@ -49,7 +49,11 @@ class WelcomePage extends StatelessWidget {
                 children: [
                   Text(
                     "Express delivery",
-                    style: TextStyle(fontSize: 16, color: Colors.black54),
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.black54,
+                      fontFamily: 'Onest',
+                    ),
                   ),
                   Text(
                     "Leipzig Street, 21",
@@ -57,6 +61,7 @@ class WelcomePage extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       fontSize: 18,
                       color: Colors.black,
+                      fontFamily: 'Onest',
                     ),
                   ),
                 ],
@@ -141,7 +146,11 @@ class WelcomePage extends StatelessWidget {
             const SizedBox(height: 8),
             Text(
               name,
-              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+              style: const TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+                fontFamily: 'Onest',
+              ),
             ),
           ],
         ),
@@ -171,16 +180,18 @@ class WelcomePage extends StatelessWidget {
                   "Down payment 0%",
                   style: TextStyle(
                     fontWeight: FontWeight.w500,
-                    fontSize: 24,
+                    fontSize: 20,
                     color: Colors.white,
+                    fontFamily: 'Onest',
                   ),
                 ),
                 SizedBox(height: 4),
                 Text(
                   "Action from 1 - 30 April",
                   style: TextStyle(
-                    fontSize: 14,
+                    fontSize: 12,
                     color: Colors.white70,
+                    fontFamily: 'Onest',
                   ),
                 ),
               ],
@@ -199,6 +210,7 @@ class WelcomePage extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 19,
                   fontWeight: FontWeight.bold,
+                  fontFamily: 'Onest',
                 ),
               ),
             ),
@@ -225,8 +237,11 @@ class WelcomePage extends StatelessWidget {
             children: [
               Text(
                 "View all",
-                style:
-                    TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Onest',
+                ),
               ),
               Icon(Icons.arrow_forward_ios_rounded, size: 16),
             ],
@@ -310,17 +325,24 @@ class WelcomePage extends StatelessWidget {
                 const Positioned(
                   top: 5,
                   right: 5,
-                  child: CircleAvatar(
-                    backgroundColor: Colors.white,
-                    child: Icon(Icons.favorite_border, color: Colors.black),
-                  ),
+                  child: Icon(Icons.favorite_border, color: Colors.black),
+                ),
+                const Positioned(
+                  bottom: 5,
+                  right: 5,
+                  child:
+                      Icon(Icons.keyboard_control_sharp, color: Colors.black),
                 ),
               ],
             ),
             const SizedBox(height: 8),
             Text(
               name,
-              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+              style: const TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+                fontFamily: 'Onest',
+              ),
             ),
           ],
         ),
