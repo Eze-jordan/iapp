@@ -165,7 +165,7 @@ class WelcomePage extends StatelessWidget {
         height: 90,
         width: double.infinity,
         decoration: BoxDecoration(
-          color: Colors.black,
+          color: const Color(0xFF011D12),
           borderRadius: BorderRadius.circular(12),
         ),
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),

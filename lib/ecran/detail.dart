@@ -135,6 +135,7 @@ class Detail extends StatelessWidget {
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                       color: Colors.black,
+                      fontFamily: 'Onest',
                     ),
                   ),
                   SizedBox(width: 5),
@@ -144,6 +145,7 @@ class Detail extends StatelessWidget {
                       fontSize: 11,
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
+                      fontFamily: 'Onest',
                     ),
                   ),
                   SizedBox(width: 5),
@@ -198,8 +200,13 @@ class Detail extends StatelessWidget {
                         ),
                         onPressed: () {},
                         child: const Text(
-                          'ADD TO CART',
-                          style: TextStyle(color: Colors.white),
+                          'Buy now',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                            fontFamily: 'Onest',
+                          ),
                         ),
                       ),
                       ElevatedButton(
@@ -214,8 +221,12 @@ class Detail extends StatelessWidget {
                           // Action pour "Book Now"
                         },
                         child: const Text(
-                          'BOOK NOW',
-                          style: TextStyle(color: Colors.white),
+                          'Add to cart',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                              fontFamily: 'Onest'),
                         ),
                       ),
                     ],
